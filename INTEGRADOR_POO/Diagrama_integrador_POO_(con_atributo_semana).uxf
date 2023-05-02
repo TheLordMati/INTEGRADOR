@@ -1,0 +1,46 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><help_text>Diagrama para Gimnasio (INTEGRADOR)</help_text><element><id>UMLClass</id><coordinates><x>848</x><y>320</y><w>168</w><h>72</h></coordinates><panel_attributes>Cliente
+--
+- fecha_ingreso: String
+--
++ calificar(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>240</y><w>168</w><h>72</h></coordinates><panel_attributes>Tutor
+--
+- calificacion: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>712</x><y>0</y><w>168</w><h>152</h></coordinates><panel_attributes>Persona
+--
+- id: int
+- nombre: String
+- apellido: String
+- fecha_nacimiento: String
+- sexo: char
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>144</y><w>144</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>808</x><y>144</y><w>136</w><h>192</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;220</additional_attributes></element><element><id>UMLNote</id><coordinates><x>880</x><y>0</y><w>120</w><h>40</h></coordinates><panel_attributes>NOTA:
+De esta clase se herenda</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1056</x><y>632</y><w>168</w><h>80</h></coordinates><panel_attributes>Musculo
+--
+- nombre: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>752</x><y>632</y><w>168</w><h>80</h></coordinates><panel_attributes>Ejercicio
+--
+- nombre: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>912</x><y>664</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- grupo_muscular</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>752</x><y>712</y><w>208</w><h>48</h></coordinates><panel_attributes>NOTA:
+La clase tendrá un atrib. priv.
+"ArrayList&lt;Musculo&gt; grupo_muscular".</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>464</y><w>192</w><h>80</h></coordinates><panel_attributes>Rutina
+--
+- volumen_entrenamiento: int
+- orden_realizar: int
+- semana_inicio: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>632</x><y>672</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- ejercicio</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>360</y><w>224</w><h>168</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- rutina_asignada</panel_attributes><additional_attributes>10;190;260;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>848</x><y>392</y><w>112</w><h>56</h></coordinates><panel_attributes>NOTA:
+Se supone que un
+entrenamiento se le es
+asignado a un cliente.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>640</y><w>192</w><h>80</h></coordinates><panel_attributes>Serie
+--
+- tiempo_descanso: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>536</x><y>536</y><w>56</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- series</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>304</y><w>96</w><h>176</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tutor_asignado</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>UMLNote</id><coordinates><x>336</x><y>256</y><w>144</w><h>56</h></coordinates><panel_attributes>NOTA:
+Un tutor es asignado a 1 solo
+entrenamiento</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>808</y><w>192</w><h>72</h></coordinates><panel_attributes>Repeticion
+--
+- numero_rep: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>712</y><w>80</w><h>112</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- repeticiones</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>

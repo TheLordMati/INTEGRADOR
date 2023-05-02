@@ -1,0 +1,7 @@
+Este directorio es para el integrador, acá va todo lo de la logistica nomás, el diagrama hecho
+hasta el momento es el que dice literalmente "Diagrama_integrador_POO.uxf" (este driagrama se abre con
+"UMLetino.com", se importa a la herramienta web).
+
+Adjunto acá voy a dejar un link a un lista de reproducción para diagramar clases UML:
+
+link - https://youtube.com/playlist?list=PLOw7b-NX043ZalJyvLeCj_YIH8f0sU0iG

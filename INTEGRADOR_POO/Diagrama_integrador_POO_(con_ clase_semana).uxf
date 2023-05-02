@@ -1,0 +1,63 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>5</zoom_level><help_text>Diagrama para Gimnasio (INTEGRADOR)</help_text><element><id>UMLClass</id><coordinates><x>790</x><y>275</y><w>105</w><h>45</h></coordinates><panel_attributes>Cliente
+--
+- fecha_ingreso: String
+--
++ calificar(int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>225</y><w>105</w><h>45</h></coordinates><panel_attributes>Tutor
+--
+- calificacion: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>705</x><y>75</y><w>105</w><h>95</h></coordinates><panel_attributes>Persona
+--
+- id: int
+- nombre: String
+- apellido: String
+- fecha_nacimiento: String
+- sexo: char
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>165</y><w>90</w><h>95</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>765</x><y>165</y><w>85</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;220</additional_attributes></element><element><id>UMLNote</id><coordinates><x>810</x><y>75</y><w>75</w><h>25</h></coordinates><panel_attributes>NOTA:
+De esta clase se herenda</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>470</y><w>105</w><h>50</h></coordinates><panel_attributes>Musculo
+--
+- nombre: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>470</y><w>105</w><h>50</h></coordinates><panel_attributes>Ejercicio
+--
+- nombre: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>490</y><w>100</w><h>25</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- grupo_muscular</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>730</x><y>520</y><w>130</w><h>30</h></coordinates><panel_attributes>NOTA:
+La clase tendrá un atrib. priv.
+"ArrayList&lt;Musculo&gt; grupo_muscular".</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>545</x><y>365</y><w>120</w><h>50</h></coordinates><panel_attributes>Rutina
+--
+- volumen_entrenamiento: int
+- orden_realizar: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>655</x><y>495</y><w>85</w><h>25</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- ejercicio</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>300</y><w>140</w><h>105</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- rutina_asignada</panel_attributes><additional_attributes>10;190;260;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>790</x><y>320</y><w>70</w><h>35</h></coordinates><panel_attributes>NOTA:
+Se supone que un
+entrenamiento se le es
+asignado a un cliente.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>475</y><w>120</w><h>50</h></coordinates><panel_attributes>Serie
+--
+- tiempo_descanso: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>410</y><w>35</w><h>75</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- series</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>265</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tutor_asignado</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>UMLNote</id><coordinates><x>470</x><y>235</y><w>90</w><h>35</h></coordinates><panel_attributes>NOTA:
+Un tutor es asignado a 1 solo
+entrenamiento</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>535</x><y>580</y><w>120</w><h>45</h></coordinates><panel_attributes>Repeticion
+--
+- numero_rep: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>520</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- repeticiones</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>355</y><w>120</w><h>95</h></coordinates><panel_attributes>Semana
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>330</x><y>450</y><w>95</w><h>35</h></coordinates><panel_attributes>NOTA:
+Falta completar y relacionar
+esta clase con Rutina.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>445</x><y>390</y><w>110</w><h>25</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- semanas_duracion</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>455</x><y>330</y><w>85</w><h>45</h></coordinates><panel_attributes>NOTA:
+En concreto esta relación
+especifica muchos, pero
+de antemano se sabe que
+una rutina dura 4 semanas.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>95</x><y>355</y><w>120</w><h>95</h></coordinates><panel_attributes>Dia
+--
+- dia: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>395</y><w>130</w><h>25</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- dias</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>225</x><y>325</y><w>95</w><h>55</h></coordinates><panel_attributes>NOTA:
+Creo que días es un dato
+relevante ya que al finalizar
+un periodo de dias, finalizamos
+una semana y la finalizar la
+semana se pasa a la siguiente</panel_attributes><additional_attributes></additional_attributes></element></diagram>
